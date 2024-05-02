@@ -1,0 +1,107 @@
+import = ["/Users/ilnur.khalilov/.config/alacritty/themes/themes/github_light.toml"]
+live_config_reload = true
+
+[font]
+builtin_box_drawing = false
+save_to_clipboard = false
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+size = 13.0
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrains Mono"
+style = "Bold Italic"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Quit"
+key = "Q"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "Return"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\bK"
+key = "K"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002&"
+key = "W"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002c"
+key = "T"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002n"
+key = "RBracket"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0002p"
+key = "LBracket"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0002o"
+key = "RBracket"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002;"
+key = "LBracket"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002/"
+key = "F"
+mods = "Command"
+
+[shell]
+args = ["-l", "-c", "tmux new -A -s main"]
+program = "/bin/zsh"
+
+[window]
+decorations = "full"
+dynamic_title = true
+option_as_alt = "OnlyLeft"
+startup_mode = "Windowed"
