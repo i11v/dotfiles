@@ -3,8 +3,8 @@ live_config_reload = true
 
 [font]
 builtin_box_drawing = false
-save_to_clipboard = false
-semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+# save_to_clipboard = false
+# semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 size = 13.0
 
 [font.bold]
