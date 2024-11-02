@@ -1,0 +1,14 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.fontSize": 14,
+    "files.autoSave": "afterDelay",
+    "editor.renderWhitespace": "boundary",
+    "editor.fontFamily": "Input Mono Condensed, JetBrains Mono, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "telemetry.telemetryLevel": "off",
+    "workbench.colorCustomizations": {
+
+    },
+    "workbench.sideBar.location": "right",
+    "intellij-idea-keybindings.useCamelHumpsWords": true
+}
