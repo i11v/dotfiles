@@ -5,11 +5,13 @@
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 13,
   "editor.accessibilitySupport": "off",
+  "editor.lineNumbers": "relative",
 
   "cursor.composer.shouldAllowCustomModes": true,
 
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.editor.revealIfOpen": true,
   "workbench.sideBar.location": "right",
 
   "vim.easymotion": true,
@@ -35,9 +37,49 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    // Delete character into the black hole register
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "x"]
+    },
+    // Peek Definition
+    {
+      "before": ["g", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    }, // Go to Implementations
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    // Peek Implementations
+    {
+      "before": ["g", "p", "i"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+    // Go to References
     {
       "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    // Go to Type Definition
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    // Peek Type Definition
+    {
+      "before": ["g", "p", "t"],
+      "commands": ["editor.action.peekTypeDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": [
+        {
+          "command": "editor.action.showDefinitionPreviewHover",
+          "args": { "focus": true }
+        }
+      ]
+      // "when": "editorTextFocus"
     },
     {
       "before": ["<leader>", "d"],
@@ -45,7 +87,11 @@
     },
     {
       "before": ["g", "s"],
-      "commands": ["workbench.action.gotoSymbol"]
+      "commands": ["editor.action.revealDefinitionAside"]
+    },
+    {
+      "before": ["g", "x"],
+      "commands": ["editor.action.openLink"]
     },
     {
       "before": ["<C-n>"],
@@ -79,6 +125,31 @@
     {
       "before": ["g", "q"],
       "commands": ["eslint.executeAutofix"]
+    },
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["leader", "t"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    { "before": ["<S-h>"], "commands": ["workbench.action.nextEditorInGroup"] },
+    {
+      "before": ["<S-l>"],
+      "commands": ["workbench.action.previousEditorInGroup"]
     }
   ],
   "vim.leader": "<space>",
@@ -86,5 +157,9 @@
     "<C-a>": false,
     "<C-f>": false
   },
-  "files.autoSave": "onWindowChange"
+  "files.autoSave": "onWindowChange",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
+  "typescript.tsserver.maxTsServerMemory": 4096
 }
