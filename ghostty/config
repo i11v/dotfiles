@@ -1,0 +1,7 @@
+font-family = "Input Mono Compressed"
+font-size = 14
+macos-titlebar-style = "tabs"
+# macos-icon = "custom-style"
+# macos-icon-frame = "plastic"
+# macos-icon-ghost-color = "Lime Green"
+# macos-icon-screen-color = "Slate Gray"
