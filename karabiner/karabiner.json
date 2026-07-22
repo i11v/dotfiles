@@ -2659,7 +2659,8 @@
                                             "^com\\.googlecode\\.iterm2$",
                                             "^io\\.alacritty$",
                                             "^org\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
+                                            "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
