@@ -1,0 +1,26 @@
+{
+  "Destructuring Assignment": {
+    "prefix": ["deconst"],
+    "body": "const { ${2:property} } = ${1:object};"
+  },
+  "Import Named": {
+    "prefix": ["import", "importn"],
+    "body": "import { ${2:name} } from \"${1:path}\";"
+  },
+  "Import Default": {
+    "prefix": ["importdefault", "importd"],
+    "body": "import ${2:name} from \"${1:path}\";"
+  },
+  "Import Namespace": {
+    "prefix": ["importas"],
+    "body": "import * as ${2:alias} from '${1:path}';"
+  },
+  "Function Declaration": {
+    "prefix": ["func", "function"],
+    "body": ["function ${1:functionName}(${2:params}) {", "\t$0", "}"]
+  },
+  "Effect Generator": {
+    "prefix": "effectgen",
+    "body": ["Effect.gen(function* () {", "  $0", "})"]
+  }
+}
