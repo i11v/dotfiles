@@ -21,7 +21,7 @@ name = "catppuccin"
 auto_switch = false
 
 [keys]
-prefix = "ctrl+a"
+prefix = "ctrl+b"
 new_worktree = ""
 open_worktree = "prefix+shift+o"
 remove_worktree = "prefix+alt+x"

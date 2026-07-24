@@ -2643,7 +2643,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "a",
+                                        "key_code": "b",
                                         "modifiers": [
                                             "left_control"
                                         ]
