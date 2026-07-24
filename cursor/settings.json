@@ -9,7 +9,7 @@
 
   "cursor.composer.shouldAllowCustomModes": true,
 
-  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.editor.revealIfOpen": true,
   "workbench.sideBar.location": "right",
@@ -161,5 +161,9 @@
   "workbench.editorAssociations": {
     "*.svg": "default"
   },
-  "typescript.tsserver.maxTsServerMemory": 4096
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true
 }
