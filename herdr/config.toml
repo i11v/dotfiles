@@ -1,10 +1,12 @@
 onboarding = false
 
+[terminal]
+default_shell = "fish"
+shell_mode = "auto"
+new_cwd = "follow"
+
 [ui.sound]
 enabled = false
-
-[ui.toast]
-delivery = "terminal"
 
 [ui]
 show_agent_labels_on_pane_borders = true
@@ -12,9 +14,15 @@ show_agent_labels_on_pane_borders = true
 [ui.sidebar.agents]
 rows = [
   ["state_icon", "agent", "state_text"],
-  ["terminal_title_stripped"],
   ["workspace", "tab"],
 ]
+
+[ui.toast]
+delivery = "herdr"
+delay_seconds = 1
+
+[ui.toast.herdr]
+position = "top-right"
 
 [theme]
 name = "catppuccin"
@@ -22,9 +30,14 @@ auto_switch = false
 
 [keys]
 prefix = "ctrl+b"
+focus_agent = "prefix+alt+1..9"
+next_agent = "prefix+alt+j"
+previous_agent = "prefix+alt+k"
 new_worktree = ""
 open_worktree = "prefix+shift+o"
 remove_worktree = "prefix+alt+x"
+previous_workspace = "prefix+["
+next_workspace = "prefix+]"
 
 [[keys.command]]
 key = "prefix+shift+g"
