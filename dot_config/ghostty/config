@@ -35,4 +35,8 @@ macos-titlebar-style = "tabs"
 # macos-icon-screen-color = "Slate Gray"
 
 # Keybindings
-keybind = global:cmd+backquote=toggle_quick_terminal
+# keybind = global:cmd+backquote=toggle_quick_terminal
+
+# Machine-local overrides (untracked; ? = no error if absent).
+# Anything set here wins, since later files override earlier ones.
+config-file = ?local
