@@ -1,8 +1,13 @@
 # dotfiles
 
-Managed with [chezmoi](https://chezmoi.io). This repo *is* the chezmoi source
-directory — source file names encode the target path and permissions
-(`dot_config/` → `~/.config/`, `private_` → mode 0600/0700).
+Managed with [chezmoi](https://chezmoi.io).
+
+`.chezmoiroot` points chezmoi at `home/`, so everything under it is source state
+and everything at the repo root (this README, `.gitignore`, CI config) is simply
+outside chezmoi's view — no ignore rules needed to keep them out of `$HOME`.
+
+Source file names encode the target path and permissions: `home/dot_config/` →
+`~/.config/`, `private_` → mode 0600/0700.
 
 ## Daily use
 
