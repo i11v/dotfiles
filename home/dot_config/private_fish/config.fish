@@ -14,7 +14,7 @@ set --export BUN_INSTALL "$HOME/.bun"
 fish_add_path "$BUN_INSTALL/bin"
 
 # pnpm
-set -gx PNPM_HOME "/Users/ilnur/Library/pnpm"
+set -gx PNPM_HOME "$HOME/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
