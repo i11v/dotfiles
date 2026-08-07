@@ -11,6 +11,7 @@ enabled = false
 [ui]
 show_agent_labels_on_pane_borders = true
 
+agent_panel_sort = "spaces"
 [ui.sidebar.agents]
 rows = [
   ["state_icon", "agent", "state_text"],
@@ -44,3 +45,9 @@ key = "prefix+shift+g"
 type = "plugin_action"
 command = "local.sibling-worktree.open"
 description = "create sibling Git worktree"
+
+[[keys.command]]
+key = "prefix+alt+o"
+type = "shell"
+command = 'zed "${HERDR_ACTIVE_PANE_CWD:-.}"'
+description = "open current directory in Zed"
