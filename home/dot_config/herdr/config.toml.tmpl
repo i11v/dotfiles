@@ -39,13 +39,13 @@ open_worktree = "prefix+shift+o"
 remove_worktree = "prefix+alt+x"
 previous_workspace = "prefix+["
 next_workspace = "prefix+]"
-
+{{ if eq .chezmoi.hostname "GQT244F4XN" }}
 [[keys.command]]
 key = "prefix+shift+g"
 type = "plugin_action"
 command = "local.sibling-worktree.open"
 description = "create sibling Git worktree"
-
+{{ end }}
 [[keys.command]]
 key = "prefix+alt+o"
 type = "shell"
