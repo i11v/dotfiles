@@ -12,9 +12,20 @@
   },
   "cli_default_open_behavior": "new_window",
   "agent_servers": {
+    "codex-acp": {
+      "favorite_config_option_values": {
+        "reasoning_effort": [
+          "high"
+        ]
+      },
+      "type": "registry"
+    },
     "claude-acp": {
       "type": "registry",
     },
+  },
+  "agent": {
+    "default_width": 500,
   },
   "outline_panel": {
     "dock": "right",
@@ -52,9 +63,13 @@
   },
 
   "ui_font_family": ".SystemUIFont",
-  "ui_font_size": 12,
+  "ui_font_size": 13,
   "buffer_font_family": "Input Mono Narrow",
   "buffer_font_size": 12,
+  "agent_ui_font_family": ".SystemUIFont",
+  "agent_ui_font_size": 14,
+  "agent_buffer_font_family": ".SystemUIFont",
+  "agent_buffer_font_size": 12,
   "theme": {
     "mode": "system",
     "light": "One Light",
