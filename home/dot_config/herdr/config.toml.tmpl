@@ -47,6 +47,24 @@ command = "local.sibling-worktree.open"
 description = "create sibling Git worktree"
 {{ end }}
 [[keys.command]]
+key = "prefix+a"
+type = "plugin_action"
+command = "annotate.capture"
+description = "annotate text"
+
+[[keys.command]]
+key = "prefix+shift+a"
+type = "plugin_action"
+command = "annotate.copy-context"
+description = "copy annotations as context"
+
+[[keys.command]]
+key = "prefix+m"
+type = "plugin_action"
+command = "annotate.manage"
+description = "manage annotations"
+
+[[keys.command]]
 key = "prefix+alt+o"
 type = "shell"
 command = 'zed "${HERDR_ACTIVE_PANE_CWD:-.}"'
