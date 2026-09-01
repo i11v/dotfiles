@@ -9,6 +9,10 @@ end
 fish_add_path /opt/homebrew/bin
 fish_add_path "$HOME/.local/bin"
 
+if command -q mise
+    mise activate fish | source
+end
+
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 fish_add_path "$BUN_INSTALL/bin"
