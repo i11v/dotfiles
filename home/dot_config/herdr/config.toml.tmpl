@@ -5,18 +5,18 @@ default_shell = "fish"
 shell_mode = "auto"
 new_cwd = "follow"
 
-[ui.sound]
-enabled = false
-
 [ui]
 show_agent_labels_on_pane_borders = true
-
 agent_panel_sort = "spaces"
+
 [ui.sidebar.agents]
 rows = [
   ["state_icon", "agent", "state_text"],
   ["workspace", "tab"],
 ]
+
+[ui.sound]
+enabled = false
 
 [ui.toast]
 delivery = "herdr"
@@ -39,6 +39,7 @@ open_worktree = "prefix+shift+o"
 remove_worktree = "prefix+alt+x"
 previous_workspace = "prefix+["
 next_workspace = "prefix+]"
+
 {{ if eq .chezmoi.hostname "GQT244F4XN" }}
 [[keys.command]]
 key = "prefix+shift+g"
@@ -46,6 +47,7 @@ type = "plugin_action"
 command = "local.sibling-worktree.open"
 description = "create sibling Git worktree"
 {{ end }}
+
 [[keys.command]]
 key = "prefix+a"
 type = "plugin_action"
