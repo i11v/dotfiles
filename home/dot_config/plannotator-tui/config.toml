@@ -1,0 +1,5 @@
+[herdr]
+placement = "popup"
+split_direction = "right"
+popup_width = "80%"
+popup_height = "75%"
