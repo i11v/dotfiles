@@ -83,3 +83,9 @@ key = "prefix+alt+o"
 type = "shell"
 command = 'zed "${HERDR_ACTIVE_PANE_CWD:-.}"'
 description = "open current directory in Zed"
+
+[[keys.command]]
+key = "prefix+alt+h"
+type = "shell"
+command = '''created="$("$HERDR_BIN_PATH" pane split "$HERDR_ACTIVE_PANE_ID" --direction right --cwd "${HERDR_ACTIVE_PANE_CWD:-.}" --focus)" && pane_id="$(printf '%s\n' "$created" | jq -r '.result.pane.pane_id')" && "$HERDR_BIN_PATH" pane run "$pane_id" "exec hunk diff --watch"'''
+description = "open Hunk diff watcher"
