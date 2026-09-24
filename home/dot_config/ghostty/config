@@ -28,6 +28,7 @@
 # Appearance
 font-family = "Input Mono Compressed"
 font-size = 14
+theme = light:Light Owl,dark:Mariana
 macos-titlebar-style = "tabs"
 # macos-icon = "custom-style"
 # macos-icon-frame = "plastic"
