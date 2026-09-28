@@ -28,7 +28,7 @@
 # Appearance
 font-family = "Input Mono Compressed"
 font-size = 14
-theme = light:Light Owl,dark:Mariana
+theme = light:Light Owl,dark:GitHub Dark Default
 macos-titlebar-style = "tabs"
 # macos-icon = "custom-style"
 # macos-icon-frame = "plastic"
@@ -38,8 +38,8 @@ macos-titlebar-style = "tabs"
 # Keybindings
 # keybind = global:cmd+backquote=toggle_quick_terminal
 
-# Shell integration — prompt/cursor tracking, and terminfo on remote hosts
-shell-integration-features = cursor,no-sudo,title,ssh-env,ssh-terminfo
+# Shell integration — forward env and terminfo to SSH hosts (other features stay at defaults)
+shell-integration-features = ssh-env,ssh-terminfo
 
 # Machine-local overrides (untracked; ? = no error if absent).
 # Anything set here wins, since later files override earlier ones.
