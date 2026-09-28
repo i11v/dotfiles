@@ -38,6 +38,9 @@ macos-titlebar-style = "tabs"
 # Keybindings
 # keybind = global:cmd+backquote=toggle_quick_terminal
 
+# Shell integration — prompt/cursor tracking, and terminfo on remote hosts
+shell-integration-features = cursor,no-sudo,title,ssh-env,ssh-terminfo
+
 # Machine-local overrides (untracked; ? = no error if absent).
 # Anything set here wins, since later files override earlier ones.
 config-file = ?local
