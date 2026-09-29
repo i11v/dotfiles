@@ -4,6 +4,7 @@ Personal macOS configs, kept in one place so a new machine ends up like the last
 
 - fish
 - Ghostty
+- Neovim
 - Zed
 - Cursor
 - Karabiner
