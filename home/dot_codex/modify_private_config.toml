@@ -1,0 +1,29 @@
+#!/bin/sh
+
+awk '
+  /^[[:space:]]*\[[^]]+\][[:space:]]*$/ {
+    in_tui = ($0 ~ /^[[:space:]]*\[tui\][[:space:]]*$/)
+    if (in_tui) {
+      tui_found = 1
+      print
+      print "theme = \"ansi\""
+      next
+    }
+  }
+
+  in_tui && /^[[:space:]]*theme[[:space:]]*=/ {
+    next
+  }
+
+  { print }
+
+  END {
+    if (!tui_found) {
+      if (NR > 0) {
+        print ""
+      }
+      print "[tui]"
+      print "theme = \"ansi\""
+    }
+  }
+'
