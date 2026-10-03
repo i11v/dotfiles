@@ -27,6 +27,3 @@ end
 # Added by Raindrop installer
 fish_add_path "$HOME/.raindrop/bin"
 # End Raindrop installer
-# >>> mise:activate >>> managed by mise — do not edit between markers
-$HOME/.local/bin/mise activate fish | source
-# <<< mise:activate <<<
