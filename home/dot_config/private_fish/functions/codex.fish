@@ -1,5 +1,5 @@
 function codex --wraps codex --description 'Run Codex with the preferred model and reasoning effort'
-    set --local model_args --model gpt-5.6-sol
+    set --local model_args --model gpt-6-sol
 
     for arg in $argv
         switch $arg
@@ -9,5 +9,5 @@ function codex --wraps codex --description 'Run Codex with the preferred model a
         end
     end
 
-    command codex $model_args -c 'model_reasoning_effort="high"' $argv
+    command codex $model_args -c 'model_reasoning_effort="medium"' $argv
 end
