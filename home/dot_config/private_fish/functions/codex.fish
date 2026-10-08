@@ -9,5 +9,5 @@ function codex --wraps codex --description 'Run Codex with the preferred model a
         end
     end
 
-    command codex $model_args -c 'model_reasoning_effort="medium"' $argv
+    command codex $model_args -c 'model_reasoning_effort="high"' $argv
 end
