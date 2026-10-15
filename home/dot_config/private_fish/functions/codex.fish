@@ -1,5 +1,5 @@
 function codex --wraps codex --description 'Run Codex with the preferred model and reasoning effort'
-    set --local model_args --model gpt-6-sol
+    set --local model_args --model gpt-6.1-sol
 
     for arg in $argv
         switch $arg
