@@ -4,9 +4,8 @@ rex.bind("ctrl+b>j", "pane.focus", { direction = "down" })
 rex.bind("ctrl+b>k", "pane.focus", { direction = "up" })
 rex.bind("ctrl+b>l", "pane.focus", { direction = "right" })
 
--- Zoom or close the focused pane.
+-- Zoom the focused pane.
 rex.bind("ctrl+b>z", "pane.zoom")
-rex.bind("ctrl+b>x", "pane.close")
 
 -- Select tabs 1 through 9 with the same prefix.
 for index = 1, 9 do
