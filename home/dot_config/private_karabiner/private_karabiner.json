@@ -1415,7 +1415,8 @@
                                             "^io\\.alacritty$",
                                             "^org\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
-                                            "^com\\.mitchellh\\.ghostty$"
+                                            "^com\\.mitchellh\\.ghostty$",
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
